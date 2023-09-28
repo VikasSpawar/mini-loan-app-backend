@@ -10,7 +10,7 @@ const mongoUrl=process.env.MONGO_URL
 // Connect to MongoDB
 console.log(mongoUrl)
 mongoose.connect(
-  `${mongoUrl}`,
+  `mongodb+srv://vikas:mongo@cluster0.kqkto62.mongodb.net/mini-loan-app?retryWrites=true&w=majority`,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
