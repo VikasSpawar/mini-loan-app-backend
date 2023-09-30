@@ -134,7 +134,7 @@ const createScheduledRepayments = async (
   for (let i = 0; i < term; i++) {
     remainingDecimalsValue += repaymentFloorValue;
     if (i == term - 1) {
-      repaymentAmount = Math.ceil(remainingDecimalsValue + repaymentAmount);
+      repaymentAmount =(remainingDecimalsValue + Math.floor(repaymentAmount));
     } else {
       repaymentAmount = floorValue;
     }
